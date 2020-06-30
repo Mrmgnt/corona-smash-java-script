@@ -1,0 +1,65 @@
+body{
+    background-color: yellow;
+}
+h1, h2 {
+    font-size: 60px;
+    text-align: center;
+    font-family: arial;
+    margin: 10px;
+
+}
+button {
+    display: block;
+    margin: auto;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    
+}
+
+.orang {
+    width: 300px;;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    float: right;
+    
+  
+   
+
+    
+}
+
+.orang::after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 200px;
+    background: url(../img/orang.png) bottom center no-repeat;
+    background-size: 80%;
+    position: absolute;
+    bottom: 0px;
+    
+}
+
+.corona {
+    
+    width: 100px;
+    height: 100px;
+    background: url(../img/corona.png) bottom center no-repeat;
+    background-size: 130%;
+    position: absolute;
+    top: 200px;
+    left: 25px;
+    transition: top 0.3s;
+
+}
+
+.orang.muncul .corona {
+    top: 0;
+    
+}
+
+
